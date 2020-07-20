@@ -30,11 +30,11 @@ app.post("/",function(req,res){
     };
     const jsondata = JSON.stringify(data);
 
-    const url="https://us10.api.mailchimp.com/3.0/lists/df03f2112b";
+    const url="https://us10.api.mailchimp.com/3.0/lists/list_id";
 
     const options={
         method:"POST",
-        auth:"sujith1:b7134fa10fbf67a4ef8cdb0671d9399c-us10"
+        auth:"sujith1:api_key"
         
     }
 
@@ -65,6 +65,6 @@ app.listen(process.env.PORT||3000,function(){
 
 
 
-//b7134fa10fbf67a4ef8cdb0671d9399c-us10
+//api-id is b7134fa10fbf67a4ef8cdb0671d9399c-us10
 
-//list id df03f2112b
+//list id is df03f2112b
